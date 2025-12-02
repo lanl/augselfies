@@ -1,0 +1,11 @@
+	smiles
+0	COC(=O)c1cc(NC(=O)COC(=O)[C@@H]2C[C@H](O)CN2S(=O)(=O)c2ccc3c(c2)OCCO3)cc(C(=O)OC)c1
+1	C[C@]1(c2ccccc2)NC(=O)N(NC(=O)COC(=O)CCC(=O)N2CCN(S(=O)(=O)c3ccccc3)CC2)C1=O
+2	CN1CCNC(=O)[C@@]12CCCN(S(=O)(=O)c1ccc(N3CCN(C(=O)N4CCOCC4)CC3)c3cnccc13)C2
+3	COC(=O)c1cc(NC(=O)COC(=O)[C@@H]2C[C@@H](O)CN2S(=O)(=O)c2ccc3c(c2)OCCO3)cc(C(=O)OC)c1
+4	CN1CCNC(=O)[C@]12CCCN(S(=O)(=O)c1ccc(N3CCN(C(=O)N4CCOCC4)CC3)c3cnccc13)C2
+5	CC[C@]12CC[C@@H]3c4ccc(OC)cc4CC[C@H]3[C@@]1(O)CCC2=O
+6	CC1(C)NNC(=O)[C@@H]2CN21
+7	CC(C)[C@H]1COC(=O)N1C(=O)[C@@]1(C)[C@@H]2CC[C@@H](OCc3ccccc3)C(C)(C)C2=CC[C@@H]1C
+8	NC(=O)C[C@@H]1NC(=O)[C@@H]2CN12
+9	O=C(O/N=C/c1ccccc1)c1ccccc1
