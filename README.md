@@ -37,7 +37,8 @@ molcular graph. See `augselfies.augmentation` for details and implmentation.
 # Testing 
 
 This repository is desgined to be tested via pytest. Run 
-```bash 
+```bash
+pixi shell --environment test
 pytest --cov src 
 ```
 to run all unit tests and determine current code coverage. 
