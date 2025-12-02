@@ -13,7 +13,7 @@ For the original implmentation of SELFIES and references, see https://github.com
 
 # Installation 
 
-First install pixi onto your machine. Next, while in a directory for augselfies, run
+First install pixi onto your machine as well as a mirror of group-selfies (https://github.com/aspuru-guzik-group/group-selfies). Next, while in a directory for augselfies, run
 
 ```bash 
 pixi install 

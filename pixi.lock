@@ -1614,13 +1614,8 @@ packages:
   timestamp: 1759762331492
 - pypi: .
   name: augselfies
-  version: 0.0.post1.dev68+g2c9059b55.d20251202
-  sha256: 6f003b0d2b86dcc0d8a5c4058e8f46e203ffce54958c03cb44d7b92bb657044e
-  requires_dist:
-  - importlib-metadata ; python_full_version < '3.8'
-  - setuptools ; extra == 'testing'
-  - pytest ; extra == 'testing'
-  - pytest-cov ; extra == 'testing'
+  version: 0.1.0
+  sha256: 64096e44b4fd7664ba43147313e04d2a2623dea477fda9a4a147db58730a5e1a
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
   sha256: 1c656a35800b7f57f7371605bc6507c8d3ad60fbaaec65876fce7f73df1fc8ac

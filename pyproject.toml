@@ -1,16 +1,22 @@
 
+[project]
+name = "augselfies"
+version = "0.1.0"
+description = "Augmentation of SELFIES encoding"
+readme = "README.md"
+
+license = "MIT":
+license-files = ["LICENSE*]
 
 [build-system]
-requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=5"]
-build-backend = "setuptools.build_meta"
+build-backend = "hatchling.build"
+requires = ["hatchling"]
 
 [tool.setuptools_scm]
 version_scheme = "no-guess-dev"
 
 
-
 [tool.pixi.project]
-name = "augselfies"
 channels = ["conda-forge"]
 platforms = ["linux-64","linux-aarch64","osx-arm64"]
 

@@ -1,0 +1,6 @@
+.venv
+.pixi
+
+build
+
+dist
