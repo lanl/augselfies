@@ -24,6 +24,24 @@ pixi shell
 ```
 from the root directory of this project to install the dependencies and to activate the envioronment.
 
+PyPI/pip Instructions:
+
+It is *not* recommended to install from pip, which loses some of the precision that pixi provides for general dependency management. However, for
+ease of installation this project may be installed from source via 
+
+```bash
+pip install .["pip"]
+```
+or from PyPI via 
+
+```bash
+pip install augselfies["pip"]
+```
+
+This is provided as a convenience but may cause unintended behavior. 
+
+12.02.2025: GroupSELFIES must be separately sourced at this time.
+
 # Usage 
 
 augSELFIES should be used as a library, predominantly for data processing. 

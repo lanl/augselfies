@@ -1,0 +1,30 @@
+[project]
+channels = ["conda-forge"]
+platforms = ["linux-64","linux-aarch64","osx-arm64"]
+
+[pypi-dependencies]
+augselfies = { path = ".", editable = true }
+group-selfies = {path = "../group-selfies", editable = true}
+
+[tasks]
+
+[dependencies]
+pyscaffold = ">=4.6,<5"
+selfies = ">=2.1.2,<3"
+rdkit = ">=2025.3.1"
+ipykernel = ">=6.29.5,<7"
+pip = ">=24.3.1,<25"
+networkx = "*"
+tqdm = "*"
+sigtools = "*"
+
+[feature.test.dependencies]
+pytest = ">=8.3.4,<9"
+pytest-cov = ">=6.0.0,<7"
+
+[feature.docs.dependencies]
+sphinx="*"
+
+[environments]
+test = ["test"]
+docs = ["docs"]

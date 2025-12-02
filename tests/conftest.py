@@ -3,10 +3,11 @@ import pytest
 import pickle
 import pandas as pd 
 import rdkit.Chem 
-from augselfies import PROJECT_ROOT
 from group_selfies import Group 
 from group_selfies.group_grammar import GroupGrammar
 
+
+PROJECT_ROOT = os.path.abspath(os.path.join(__file__,"..",".."))
 
 @pytest.fixture
 def group_grammar_a_path():

@@ -1615,7 +1615,7 @@ packages:
 - pypi: .
   name: augselfies
   version: 0.1.0
-  sha256: 913946819c1cce188762b8f9a334f25ef820af4f08aeeb5af21d0f586bc87271
+  sha256: 9fc521ba6ae34866d7b950ac25474cbf3db8e275ed080aec42296b7d3b207f79
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
   sha256: 1c656a35800b7f57f7371605bc6507c8d3ad60fbaaec65876fce7f73df1fc8ac

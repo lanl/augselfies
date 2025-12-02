@@ -5,8 +5,11 @@ from typing import Union
 import selfies as sf 
 import selfies.constants
 import selfies.grammar_rules
-import group_selfies.grammar_rules
-import group_selfies.constants
+try:
+    import group_selfies.grammar_rules
+    import group_selfies.constants
+except ImportError as err:
+    print(repr(err))
 import augselfies.constants
 from augselfies.constants import INT_ALPHABET
 
