@@ -5,8 +5,8 @@ version = "0.1.0"
 description = "Augmentation of SELFIES encoding"
 readme = "README.md"
 
-license = "MIT":
-license-files = ["LICENSE*]
+license = "MIT"
+license-files = ["LICENSE*"]
 
 [build-system]
 build-backend = "hatchling.build"
