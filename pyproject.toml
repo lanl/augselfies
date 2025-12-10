@@ -21,7 +21,5 @@ pip = ["pandas",
 build-backend = "hatchling.build"
 requires = ["hatchling"]
 
-
-
 [tool.hatch.metadata]
 allow-direct-references = true 
