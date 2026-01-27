@@ -5,7 +5,7 @@ import rdkit.Chem
 import selfies as sf 
 import augselfies.numeralization
 
-def get_canonical_smiles(chem_representation:None|str|rdkit.Chem.Mol)->str:
+def get_canonical_smiles(chem_representation:None|str|rdkit.Chem.Mol,numeric:bool = False,**kwargs)->str:
     '''
     Provides the canonical SMILES for a given representation (e.g., SMILES, SELFIES).
     Invalid transformations are returned as null string ""
@@ -19,15 +19,20 @@ def get_canonical_smiles(chem_representation:None|str|rdkit.Chem.Mol)->str:
         mol = rdkit.Chem.MolFromSmiles("")
     if isinstance(chem_representation,str):
         smiles = ""
-        try: 
-            smiles = augselfies.numeralization.num_selfies_to_smiles(chem_representation)
+        try:
+            if chem_representation[0] == "[":
+                if numeric:
+                    try: 
+                        smiles = augselfies.numeralization.num_selfies_to_smiles(chem_representation,**kwargs)
+                    except:
+                        pass
+                elif smiles == "":
+                    try:
+                        smiles = sf.decoder(chem_representation,**kwargs)
+                    except:
+                        pass
         except:
             pass
-        if smiles == "":
-            try:
-                smiles = sf.decoder(chem_representation)
-            except:
-                pass
         if smiles == "": 
             smiles = chem_representation
         try:

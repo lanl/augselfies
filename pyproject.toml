@@ -9,13 +9,14 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE*"]
 
-[project.optional-dependencies] #for direct installation via pip
-pip = ["pandas",
+dependencies =  ["pandas",
 "selfies>=2.2.0,<3",
 "rdkit>=2025.3.1",
 "networkx",
 "tqdm",
-"sigtools"] #NOTE: A lack of a group-selfies dependency causes certain failed behaviors for GroupSELFIES/NumGroupSELFIES. This will be replaced with a tested mirror in future releases.
+"sigtools",
+"group-selfies @ git+https://github.com/lanl/group-selfies@dev"
+] 
 
 [build-system]
 build-backend = "hatchling.build"

@@ -30,7 +30,7 @@ def test_get_canonical_smiles_from_selfies(aniline_selfies,canonical_aniline_smi
     assert canonical_aniline_smiles == smiles.get_canonical_smiles(aniline_selfies), "Aniline SELFIES did not canonicalize correctly"
 
 def test_get_canonical_smiles_from_numselfies(aniline_numselfies,canonical_aniline_smiles):
-    assert canonical_aniline_smiles == smiles.get_canonical_smiles(aniline_numselfies), "Aniline numSELFIES did not canonicalize correctly"
+    assert canonical_aniline_smiles == smiles.get_canonical_smiles(aniline_numselfies,numeric=True), "Aniline numSELFIES did not canonicalize correctly"
 
 def test_get_canonical_smiles_from_mol(aniline_mol,canonical_aniline_smiles):
     assert canonical_aniline_smiles == smiles.get_canonical_smiles(aniline_mol), "Aniline numSELFIES did not canonicalize correctly"

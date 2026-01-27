@@ -5,11 +5,8 @@ from typing import Union
 import selfies as sf 
 import selfies.constants
 import selfies.grammar_rules
-try:
-    import group_selfies.grammar_rules
-    import group_selfies.constants
-except ImportError as err:
-    print(repr(err))
+import group_selfies.grammar_rules
+import group_selfies.constants
 import augselfies.constants
 from augselfies.constants import INT_ALPHABET
 
@@ -86,6 +83,8 @@ def tokens_to_natural_number(numeric_tokens:list[str],base_int:int = 16)->int:
 def get_token_list(selfies_like_string:str)->list[str]:
     '''Returns list of tokens for string tokenized by [a][b][c]'''
     if not selfies_like_string:
+        token_list = []
+    if selfies_like_string[0] is not "[":
         token_list = []
     else:    
         token_list = selfies_like_string.split("][")
@@ -246,13 +245,13 @@ def num_group_selfies_to_group_selfies(num_group_selfies:str,base_int = 16,
         return_token_list = [] 
     return "".join(return_token_list) 
 
-def smiles_to_num_selfies(smiles_string:str)->str:
+def smiles_to_num_selfies(smiles_string:str,**kwargs)->str:
     '''Wrapper for converting SMILES directly to numSELFIES'''
-    return selfies_to_num_selfies(sf.encoder(smiles_string))
+    return selfies_to_num_selfies(sf.encoder(smiles_string),**kwargs)
 
-def num_selfies_to_smiles(num_selfies_string:str)->str:
+def num_selfies_to_smiles(num_selfies_string:str,**kwargs)->str:
     '''Wrapper for convering numSELFIES directly to SMILES'''
-    return sf.decoder(num_selfies_to_selfies(num_selfies_string))
+    return sf.decoder(num_selfies_to_selfies(num_selfies_string,**kwargs))
 
 def get_tokens_handler(token_str:Union[str,list[str]])->list[str]:
     if isinstance(token_str,str):

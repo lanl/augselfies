@@ -6,8 +6,8 @@ import rdkit.Chem
 from group_selfies import Group 
 from group_selfies.group_grammar import GroupGrammar
 
-
 PROJECT_ROOT = os.path.abspath(os.path.join(__file__,"..",".."))
+
 
 @pytest.fixture
 def group_grammar_a_path():
@@ -32,5 +32,5 @@ def chiral_grammar(chiral_grammar_path)->GroupGrammar:
 
 @pytest.fixture
 def smiles_set()->list[str]:
-    df = pd.read_csv(os.path.join(PROJECT_ROOT,"tests","test_sets","smiles.csv"),delimiter = "\t")
+    df = pd.read_csv(os.path.join(PROJECT_ROOT,"tests","test_sets","smiles.csv"))
     return df['smiles'].to_list()
