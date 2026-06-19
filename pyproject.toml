@@ -11,7 +11,7 @@ license-files = ["LICENSE*"]
 
 dependencies =  ["pandas",
 "selfies>=2.2.0,<3",
-"rdkit>=2025.3.1",
+"rdkit>=2024.9.2",
 "networkx",
 "tqdm",
 "sigtools",
